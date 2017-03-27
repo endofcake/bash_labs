@@ -1,4 +1,4 @@
-# Lab 1 — Install the tools
+# Lab 1 — Installing console and tools
 
 ## Mac
 ### Tools
@@ -28,7 +28,7 @@ After you install Git, you can find the tools in `C:\Program Files\Git\usr\bin`.
 Default [Win32 console](https://en.wikipedia.org/wiki/Win32_console) is not that great in the UX department, so it's best to replace it with something decent and never look back. ConEmu is arguably the best option available on Windows. You can read more about its features [here](https://conemu.github.io/en/) and download it from [here](https://www.fosshub.com/ConEmu.html).
 Two important notes:
 * ConEmu is a console, not a shell — so it's not a replacement for `cmd.exe` or Powershell. In fact, it can be used as a UI for both of them.
-* There is a preconfigured version called [`cmder`](http://cmder.net/) — it is essentially ConEmu + [clink](https://mridgers.github.io/clink/) (which adds completion, history, and line-editing capabilities to default `cmd.exe`) + Git + some visual improvements. It's a good option if you want something functional and beautiful out of the box.
+* There is a preconfigured version called [`cmder`](http://cmder.net/) — it is essentially ConEmu + [clink](https://mridgers.github.io/clink/) (which adds completion, history, and line-editing capabilities to default `cmd.exe`) + Git + some visual improvements. It's a good option if you want something functional and good-looking out of the box.
 
 After installing ConEmu (all defaults are fine) and launching it for the first time you will be presented with this screen:
 
@@ -54,7 +54,7 @@ Put the following snippet in the `Commands` input field (you can also make it th
 >"C:\Program Files\Git\bin\bash.exe" --login -i -new_console:n:P:<Monokai>
 
 *powershell.exe -cur_console:s1THn:P:<PowerShell>
-``` 
+```
 ![](img/conemu_4.png "Configuring a new task")
 
 
