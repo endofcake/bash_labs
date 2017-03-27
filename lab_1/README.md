@@ -43,6 +43,8 @@ Here we can make a couple changes:
 
 #### Bonus points — configure a split pane task with git-bash and Powershell
 
+ConEmu settings are store at `C:\Program Files\ConEmu\ConEmu.xml` by default, so you would need to launch the console as Administrator to be able to store the modified settings. Alternatively, you can export the default system settings to another location so that you don't need to elevate your privileges.
+
 Navigate to Settings > Tasks and add a new task
 
 ![](img/conemu_3.png "Adding a new ConEmu task")
@@ -56,6 +58,8 @@ Put the following snippet in the `Commands` input field (you can also make it th
 ![](img/conemu_4.png "Configuring a new task")
 
 
-Exit the Settings (there's no apparent way to save this) and try launching the new task by clicking the small `+` symbol in the gutter:
+Save the Settings and try launching the new task by clicking the small `+` symbol in the gutter:
 
 ![](img/conemu_5.png "Launch the new task")
+
+More info on tweaking ConEmu can be found [here](http://conemu.github.io/en/Settings.html#id1610).
