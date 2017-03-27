@@ -40,3 +40,22 @@ Here we can make a couple changes:
 ![](img/conemu_2.png "Setting Git bash as default shell")
 
 * Choose a preferred colour scheme — Monokai is always a good choice, but ultimately you'd want something that works best for you. You can alway change it later.
+
+#### Bonus points — configure a split pane task with git-bash and Powershell
+
+Navigate to Settings > Tasks and add a new task
+
+![](img/conemu_3.png "Adding a new ConEmu task")
+
+Put the following snippet in the `Commands` input field (you can also make it the default for new console):
+```
+>"C:\Program Files\Git\bin\bash.exe" --login -i -new_console:n:P:<Monokai>
+
+*powershell.exe -cur_console:s1THn:P:<PowerShell>
+``` 
+![](img/conemu_4.png "Configuring a new task")
+
+
+Exit the Settings (there's no apparent way to save this) and try launching the new task by clicking the small `+` symbol in the gutter:
+
+![](img/conemu_5.png "Launch the new task")
