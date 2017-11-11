@@ -10,19 +10,19 @@ Built-in Terminal is not too bad, but there are many ways working with shell can
 * [session restoration](https://www.iterm2.com/documentation-restoration.html)
 * *lots* of [colour schemes](http://iterm2colorschemes.com/)
 
-Install iTerm2 it from [here](https://www.iterm2.com/downloads.html).
+Install iTerm2 from [here](https://www.iterm2.com/downloads.html).
 
 ## Windows
 Improving command line experience on Windows is a tad more involved exercise (well, that's one way to put it).
 
 ### Tools
-To get Unix tools, download and install [Git for Windows] (https://git-scm.com/download/win). This is a reasonably straightforward process and you can accept most of the defaults, with one exception — choose `Windows' default console` instead of MinTTY:
+To get Unix tools, download and install [Git for Windows](https://git-scm.com/download/win). This is a reasonably straightforward process and you can accept most of the defaults, with one exception — choose `Windows' default console` instead of MinTTY:
 
 ![](img/git_1.png "Select Windows' default console")
 
 MinTTY is known to cause some issues, and we won't be using default Git console anyway.
 
-After you install Git, you can find the tools in `C:\Program Files\Git\usr\bin`. This is a usefult place to know if you want, for example, to [change the default shell in Visual Studio Code to bash](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration), or if you want to launch `vim` from PowerShell (just add this folder to the system `PATH`).
+After you install Git, you can find the tools in `C:\Program Files\Git\usr\bin`. This is a useful place to know if you want, for example, to [change the default shell in Visual Studio Code to bash](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration), or if you want to launch `vim` from PowerShell (just add this folder to the system `PATH`).
 
 ### Console
 Default [Win32 console](https://en.wikipedia.org/wiki/Win32_console) is not that great in the UX department, so it's best to replace it with something decent and never look back. ConEmu is arguably the best option available on Windows. You can read more about its features [here](https://conemu.github.io/en/) and download it from [here](https://www.fosshub.com/ConEmu.html).
@@ -43,9 +43,9 @@ Here we can make a couple changes:
 
 #### Bonus points — configure a split pane task with git-bash and Powershell
 
-ConEmu settings are store at `C:\Program Files\ConEmu\ConEmu.xml` by default, so you would need to launch the console as Administrator to be able to store the modified settings. Alternatively, you can export the default system settings to another location so that you don't need to elevate your privileges.
+ConEmu settings are stored at `C:\Program Files\ConEmu\ConEmu.xml` by default, so you would need to launch the console as Administrator to be able to store the modified settings. Alternatively, you can export the default system settings to another location so that you don't need to elevate your privileges.
 
-Navigate to Settings > Tasks and add a new task
+Navigate to Settings > Tasks (`Win + Alt + P`, or right-click on the title bar and select Settings > Tasks) and add a new task.
 
 ![](img/conemu_3.png "Adding a new ConEmu task")
 
@@ -62,4 +62,6 @@ Save the Settings and try launching the new task by clicking the small `+` symbo
 
 ![](img/conemu_5.png "Launch the new task")
 
-More info on tweaking ConEmu can be found [here](http://conemu.github.io/en/Settings.html#id1610).
+You will now have git-bash running in the left pane and Powershell in the right. You can switch between the panes by pressing `Edit + Tab`, alternatively use `Win + <number of the console>` to got the desired console immediately (this works best if you have multiple tabs open).
+
+More info on tweaking ConEmu can be found [here](http://conemu.github.io/en/Settings.html#id1610). Keyboard hotkeys can be found [here](https://conemu.github.io/en/KeyboardShortcuts.html).
