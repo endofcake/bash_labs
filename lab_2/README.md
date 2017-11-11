@@ -5,13 +5,13 @@
 There are several main files that are used to configure shell on a system:
 
 * system-wide configuration files `bash.bashrc` (or simply `bashrc`) and `profile`, which can be found in `/etc/` folder (on Windows it's located inside Git installation directory, such as `C:\Program Files\Git\etc`)
-* user-specific dotfiles `bashrc` and `.bash_profile` or `.profile`, which are located in the user's home folder.
-
-The exact rules how all those files interact are [somewhat complicated](https://stackoverflow.com/questions/415403/whats-the-difference-between-bashrc-bash-profile-and-environment), so to avoid any surprises and understand in which order they run it can be useful to add logging commands at the start of each file. 
+* user-specific dotfiles `bashrc` and `.bash_profile` or `.profile`, which are located in the user's home folder (they are covered in [Lab 3](../lab_3/)).
 
 Another file that affects user experience of working with command line is `.inputrc` (and its system-wide `/etc/inputrc` counterpart). This is the configuration file of Readline — a library which provides line-editing and history capabilities for many command-line utilities, including bash.
 
-## Some useful default Readling hotkeys
+## Some useful default Readline hotkeys
+
+I really can't stress enough how useful these hotkeys are in the everyday work. Take some time to remember them.
 
 * `Tab` – autocomplete
 * `Ctrl + l` – clear the screen
