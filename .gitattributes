@@ -1,0 +1,4 @@
+# Always LF for bash scripts
+*.sh text eol=lf
+*.txt text eol=lf
+.* text eol=lf

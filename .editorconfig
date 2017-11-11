@@ -9,17 +9,11 @@ indent_size = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.yml, Dockerfile]
-indent_size = 2
-
-[Dockerfile]
-indent_size = 2
-
-; enforce LF for Linux containers
-[*sh]
+[*.{Dockerfile,yaml,yml}]
 end_of_line = lf
 indent_size = 2
 
-[*sql]
+; enforce LF for Linux files
+[{*sh,.*}]
 end_of_line = lf
 indent_size = 2
