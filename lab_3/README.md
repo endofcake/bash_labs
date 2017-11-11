@@ -2,7 +2,7 @@
 
 ## Tweaking `.bash_profile`
 
-The exact sequence in which bash configuration files are loaded is somewhat complicated and depends on the system and whether the shell is interactive or not. The best way to understand it would be to add a simple logging statement on top of each file:
+The exact sequence in which bash configuration files are loaded is [somewhat complicated](https://stackoverflow.com/questions/415403/whats-the-difference-between-bashrc-bash-profile-and-environment) and depends on the system and whether the shell is interactive or not. The best way to understand it would be to add a simple logging statement on top of each file:
 ```
 echo "Loading system bash.bashrc..."
 ```
@@ -49,7 +49,7 @@ This is a little bit more involved, but can make day-to-day work much easier if 
 git clone https://github.com/Bash-it/bash-it.git
 ```
 
-* take a look at available completions and source the ones that you want in your `.bash_profile`:
+* take a look at available completions and source the ones that you want in your `.bash_profile` (assuming you cloned it in `/c/dev/public/`):
 ```
 source /c/dev/public/bash-it/completion/available/docker.completion.bash
 source /c/dev/public/bash-it/completion/available/docker-compose.completion.bash
@@ -66,7 +66,7 @@ source /c/dev/public/bash-it/completion/available/awscli.completion.bash
 
 ### Bonus points
 
-Customise command prompt to look like `cmder` :-D
+Customise command prompt to look like `cmder` :grinning::
 ```
 PS1='\[\033]0;${PWD//[^[:ascii:]]/?}\007\]' # set window title
 
